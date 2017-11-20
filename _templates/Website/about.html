@@ -1,0 +1,62 @@
+{% extends 'masters/master.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+<div id="fh5co-about-us" data-section="about">
+		<div class="container">
+			<div class="row row-bottom-padded-lg" id="about-us">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">About Us</h2>
+					<div class="row">
+
+							<div class="col-md-12  to-animate" height="150px" style="background-image: url({% static 'desenvolvimento.jpg' %}) " >
+								<h3>AngoApp é uma empresa que se foca em reforçar o sector tecnológico em Angola, África. AngoApp tem como suas funções centrais a criação de aplicativos móveis para a educação e entretenimento da população angolana assim como a automação de serviços das empresas nacionais.</h3>
+							</div>
+
+					</div>
+
+
+				</div>
+
+
+				<div class="col-md-8 to-animate">
+					<img src="{% static 'desenvolvimento.jpg' %}" class="img-responsive img-rounded" alt="Free HTML5 Template">
+				</div>
+				<div class="col-md-4 to-animate">
+					<h2>How we got started</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+					<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day.</p>
+					<p><a href="#" class="btn btn-primary">Meet the team</a></p>
+				</div>
+			</div>
+			<div class="row" id="team">
+				<div class="col-md-12 section-heading text-center to-animate">
+					<h2>Team</h2>
+				</div>
+				<div class="col-md-12">
+					<div class="row row-bottom-padded-lg">
+						{% for cont in administrators %}
+						<div class="col-md-6 text-center to-animate">
+							<div class="person">
+								<img src="{{cont.Photo.url}}" class="img-responsive img-rounded" alt="Person">
+								<h3 class="name">{{cont.Name}}</h3>
+								<div class="position">{{cont.Position}}</div>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+								<ul class="social social-circle">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-instagram"></i></a></li>
+									<li><a href="#"><i class="icon-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						{% endfor %}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+

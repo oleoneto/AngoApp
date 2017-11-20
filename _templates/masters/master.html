@@ -1,0 +1,19 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+{% include 'snippets/snip_main_header.html' %}
+
+
+<body>
+{% include 'snippets/snip_main_nav.html' %}
+
+{% block body %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+
+{% include 'snippets/snip_main_footer.html' %}
+</body>
+</html>

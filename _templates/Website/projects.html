@@ -1,0 +1,65 @@
+{% extends 'masters/master.html' %}
+{% load static from staticfiles %}
+
+
+
+{% block content %}
+<style>
+#tf-menu.navbar-default {
+background: #333333;
+}
+body{
+    background: white;
+    color: #333333;
+}
+
+</style>
+
+<!-- Portfolio Section
+    ==========================================-->
+    <div id="tf-works">
+        <div class="container"> <!-- Container -->
+            <div class="section-title text-center center">
+                <h2> <strong>Portofolio</strong></h2>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="clearfix"></div>
+                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+            </div>
+            <div class="space"></div>
+
+
+
+            <div id="lightbox" class="row">
+
+
+              {% for cont in All_Work %}
+                <div class="col-sm-6 col-md-6 col-lg-6 branding" >
+                    <div class="portfolio-item">
+                        <div class="hover-bg" >
+                            <a href="{{cont.PlayStoreLink}}">
+                                <div class="hover-text">
+                                    <h4>{{cont.ProjectName}}</h4>
+                                    <small>Release Date: {{cont.ReleaseData}}</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="{{cont.Photo.url}}" class="imagem-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <h2>{{cont.ProjectName}}</h2>
+                <p>{{cont.Description}}</p>           -->
+
+              {% endfor %}
+
+
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
