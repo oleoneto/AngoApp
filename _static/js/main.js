@@ -78,7 +78,7 @@
 	// Burger Menu
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+		$('body').on('click', '.js-nav-toggle', function(event){
 
 			if ( $('#navbar').is(':visible') ) {
 				$(this).removeClass('active');	
@@ -107,7 +107,7 @@
 		    if ( navbar.is(':visible')) {
 		    	navbar.removeClass('in');
 		    	navbar.attr('aria-expanded', 'false');
-		    	$('.js-fh5co-nav-toggle').removeClass('active');
+		    	$('.js-nav-toggle').removeClass('active');
 		    }
 
 		    event.preventDefault();
@@ -156,16 +156,16 @@
 
 		$(window).scroll(function(event){
 
-		   	var header = $('#fh5co-header'),
+		   	var header = $('#header'),
 				scrlTop = $(this).scrollTop();
 
 			if ( scrlTop > 500 && scrlTop <= 2000 ) {
-				header.addClass('navbar-fixed-top fh5co-animated slideInDown');
+				header.addClass('navbar-fixed-top animated slideInDown');
 			} else if ( scrlTop <= 500) {
 				if ( header.hasClass('navbar-fixed-top') ) {
-					header.addClass('navbar-fixed-top fh5co-animated slideOutUp');
+					header.addClass('navbar-fixed-top animated slideOutUp');
 					setTimeout(function(){
-						header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
+						header.removeClass('navbar-fixed-top animated slideInDown slideOutUp');
 					}, 100 );
 				}
 			} 
@@ -250,8 +250,8 @@
 	// Services
 	var servicesAnimate = function() {
 
-		if ( $('#fh5co-our-services').length > 0 ) {	
-			$('#fh5co-our-services .to-animate').each(function( k ) {
+		if ( $('#our-services').length > 0 ) {
+			$('#our-services .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -265,8 +265,8 @@
 	};
 	var servicesWayPoint = function() {
 
-		if ( $('#fh5co-our-services').length > 0 ) {
-			$('#fh5co-our-services').waypoint( function( direction ) {
+		if ( $('#our-services').length > 0 ) {
+			$('#our-services').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
 
@@ -286,8 +286,8 @@
 	// Features
 	var featuresAnimate = function() {
 
-		if ( $('#fh5co-features').length > 0 ) {	
-			$('#fh5co-features .to-animate').each(function( k ) {
+		if ( $('#features').length > 0 ) {
+			$('#features .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -301,8 +301,8 @@
 	};
 	var featuresWayPoint = function() {
 
-		if ( $('#fh5co-features').length > 0 ) {
-			$('#fh5co-features').waypoint( function( direction ) {
+		if ( $('#features').length > 0 ) {
+			$('#features').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
 
@@ -331,8 +331,8 @@
 	// testimonials
 	var testimonialsAnimate = function() {
 
-		if ( $('#fh5co-testimonials').length > 0 ) {	
-			$('#fh5co-testimonials .to-animate').each(function( k ) {
+		if ( $('#testimonials').length > 0 ) {
+			$('#testimonials .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -346,8 +346,8 @@
 	};
 	var testimonialsWayPoint = function() {
 
-		if ( $('#fh5co-testimonials').length > 0 ) {
-			$('#fh5co-testimonials').waypoint( function( direction ) {
+		if ( $('#testimonials').length > 0 ) {
+			$('#testimonials').waypoint( function( direction ) {
 										
 				
 					setTimeout(testimonialsAnimate, 200);
@@ -364,8 +364,8 @@
 	// Pricing
 	var pricingAnimate = function() {
 
-		if ( $('#fh5co-pricing').length > 0 ) {	
-			$('#fh5co-pricing .to-animate').each(function( k ) {
+		if ( $('#pricing').length > 0 ) {
+			$('#pricing .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -379,8 +379,8 @@
 	};
 	var pricingWayPoint = function() {
 
-		if ( $('#fh5co-pricing').length > 0 ) {
-			$('#fh5co-pricing').waypoint( function( direction ) {
+		if ( $('#pricing').length > 0 ) {
+			$('#pricing').waypoint( function( direction ) {
 										
 					setTimeout(function(){
 						$('.animate-pricing-1').addClass('animated fadeIn');
@@ -402,8 +402,8 @@
 	// Pricing
 	var pressAnimate = function() {
 
-		if ( $('#fh5co-press').length > 0 ) {	
-			$('#fh5co-press .to-animate').each(function( k ) {
+		if ( $('#press').length > 0 ) {
+			$('#press .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -417,8 +417,8 @@
 	};
 	var pressWayPoint = function() {
 
-		if ( $('#fh5co-press').length > 0 ) {
-			$('#fh5co-press').waypoint( function( direction ) {
+		if ( $('#press').length > 0 ) {
+			$('#press').waypoint( function( direction ) {
 										
 					setTimeout(function(){
 						$('.animate-press-1').addClass('animated fadeIn');

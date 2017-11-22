@@ -36,7 +36,7 @@ class Project(models.Model):
     manager = models.ForeignKey(Person)
     client = models.CharField(max_length=15, blank=False)
     description = models.TextField()
-    details = models.CharField(max_length=30, blank=True)
+    link = models.CharField(max_length=300, blank=True)
     artwork = models.ImageField(upload_to='uploads/projects/', max_length=45, blank=True)
     featured = models.BooleanField(default=False)
     publishedDate = models.DateTimeField(auto_now=False)

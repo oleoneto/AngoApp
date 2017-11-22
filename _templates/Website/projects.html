@@ -14,52 +14,36 @@ body{
 }
 
 </style>
-
-<!-- Portfolio Section
-    ==========================================-->
-    <div id="tf-works">
+<!-- Portfolio Section ==========================================-->
+    <div id="features">
         <div class="container"> <!-- Container -->
-            <div class="section-title text-center center">
-                <h2> <strong>Portofolio</strong></h2>
+            <div class="section-title text-left center">
+                <h1 class="heading">Portofolio</h1>
                 <div class="line">
                     <hr>
                 </div>
                 <div class="clearfix"></div>
-                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
             </div>
             <div class="space"></div>
 
-
-
             <div id="lightbox" class="row">
-
-
-              {% for cont in All_Work %}
-                <div class="col-sm-6 col-md-6 col-lg-6 branding" >
+              {% for project in projects %}
+                <div class="col-sm-6 col-md-4 col-lg-4 branding" >
+{#                <h1>{{project.title}}</h1>#}
+{#                <h4>{{project.publishedDate | date}}</h4>#}
                     <div class="portfolio-item">
                         <div class="hover-bg" >
-                            <a href="{{cont.PlayStoreLink}}">
-                                <div class="hover-text">
-                                    <h4>{{cont.ProjectName}}</h4>
-                                    <small>Release Date: {{cont.ReleaseData}}</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="{{cont.Photo.url}}" class="imagem-responsive" alt="...">
+                            <a href="{{project.link}}">
+                            {% if project.artwork %}
+                            <img src="{{project.artwork.url}}" class="img-responsive" alt="Image of {{ project.title }}">
+                            {% endif %}
                             </a>
                         </div>
                     </div>
+{#                <h1>{{ project.title }}</h1>#}
                 </div>
-                <!-- <h2>{{cont.ProjectName}}</h2>
-                <p>{{cont.Description}}</p>           -->
-
               {% endfor %}
-
-
         </div>
     </div>
 
-
 {% endblock %}
-
-
