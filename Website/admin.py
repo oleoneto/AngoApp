@@ -28,13 +28,16 @@ make_unfeatured.short_description = "Unmark as featured content"
 
 #____________________________________________________
 
+class PhotoInline(admin.TabularInline):
+    model = Photo
+
 
 # The admin class for the Doc model
 # fields are self-explanatory
 class ArticleAdmin(admin.ModelAdmin):
     ordering = ['-publishedDate']
     list_display = ['title', 'author', 'slug',
-                    'updatedDate','status']
+                    'publishedDate','status']
     prepopulated_fields = {"slug": ("title",)}
     actions = [make_draft, make_published]
     short_description = 'title'
@@ -56,6 +59,7 @@ class ProjectAdmin(admin.ModelAdmin):
                     'publishedDate', 'status', 'featured']
     actions = [make_featured, make_draft, make_published, make_unfeatured]
     prepopulated_fields = {"slug": ("title",)}
+    inlines = [PhotoInline]
 
 
 ###___________________________________________
@@ -73,6 +77,6 @@ class ProjectAdmin(admin.ModelAdmin):
 # If models are not beeing displayed in the admin dashboard,
 # try logging in as a superuser
 admin.site.site_header = "AngoApp"
-# admin.site.register(Article, ArticleAdmin)
+admin.site.register(Article, ArticleAdmin)
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Person, PersonAdmin)

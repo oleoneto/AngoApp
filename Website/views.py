@@ -82,8 +82,6 @@ def home(request):
         'grid': grid,
     })
 
-
-
 def about(request):
     people = Person.objects.filter(administrator=True).order_by('name')
     total = people.count()
@@ -100,8 +98,6 @@ def about(request):
         'grid': grid,
     })
 
-
-
 def projects(request):
     projects = Project.objects.filter(status='p').order_by('-publishedDate')
     featured = Project.objects.filter(status='p').filter(featured=True)
@@ -114,8 +110,8 @@ def projects(request):
     if total%3 == 0:
         grid = 'col-lg-4 col-md-4 col-sm-12'
 
-    return render(request, 'Website/projects.html', {
-        'page': 'project_home',
+    return render(request, 'Website/portfolio.html', {
+        'page': 'portfolio_home',
         'projects': projects,
         'featured': featured,
         'featuredTotal': featured.count(),
@@ -127,9 +123,13 @@ def projects(request):
 def project_detail(request, keyword):
     try:
         project = Project.objects.get(slug=keyword)
+        try:
+            photos = Photo.objects.filter(projectName=project.id)
+        except Photo.DoesNotExist:
+            raise Http404("No photos")
     except Project.DoesNotExist:
         raise Http404('No Project')
-    return render(request, 'Website/projects.html', {
+    return render(request, 'Website/portfolio.html', {
         'page': 'portfolio_detail',
         'project': project,
         'client': project.client,
@@ -137,19 +137,14 @@ def project_detail(request, keyword):
         'type': project.type,
         'artwork': project.artwork.url,
         'description': project.description,
+        'photos': photos,
     })
-
 
 def process(request):
     return render(request, 'Website/process.html')
 
-
-
-
 def services(request):
     return render(request, 'Website/services.html')
-
-
 
 def articles(request):
     articles = Article.objects.filter(status='p').order_by('-publishedDate')
@@ -159,10 +154,9 @@ def articles(request):
         'articles_max': 100,
     })
 
-
 def article_single(request, keyword):
 
-    relatedArticles = Article.objects.filter(status='p').order_by('-publishedDate').filter(language='pt')
+    relatedArticles = Article.objects.filter(status='p').order_by('-publishedDate')
 
     try:
         article = Article.objects.get(slug=keyword)
@@ -172,15 +166,15 @@ def article_single(request, keyword):
         raise Http404('404 - Article not found')
 
     return render(request, 'Website/articles.html', {
-        'page': 'article-single',
+        'page': 'articles_single',
         'article': article,
         'title': article.title,
         'content': article.content,
         'author': article.get_author(),
-        'authorSlug': article.author.get_slug(),
+        'authorSlug': article.author.slug,
         'authorID': article.author_id,
         'authorPhoto': article.author.photo.url,
-        'authorBio': article.author.author_bio,
+        # 'authorBio': article.author.author_bio,
         'authorTotal': authorTotal,
         'date': article.publishedDate,
         'id': article.id,

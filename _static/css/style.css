@@ -66,6 +66,12 @@ h1, h2, h3, h4, h5, h6 {
   /*overflow: scroll;*/
 }
 
+.portfolio-item h1 {
+  font-size: 3em;
+}
+
+
+
 #header {
   position: absolute;
   z-index: 99;

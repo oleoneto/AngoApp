@@ -1,0 +1,52 @@
+{% extends 'masters/master.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+
+{% comment %}
+This first section will load when the visitor is routed to .com/blog
+{% endcomment %}
+{% if page == 'articles_home' %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<div class="container">
+<div class="row">
+{% for article in articles %}
+    <div class="col-md-10 col-lg-offset-1">
+        <a href="{% url 'blog-single' article.slug %}"><h1>{{ article.title }}</h1></a>
+        <h4>Escrito por {{ article.author }} | {{ article.publishedDate }}</h4>
+        <p>{{ article.content | slice:'410' }} [...]</p>
+    </div>
+{% endfor %}
+</div>
+</div>
+
+    <br>
+    <br>
+    <br>
+{% endif %}
+
+
+{% comment %}
+This second section will load when the visitor is routed to a specific blog post or article
+{% endcomment %}
+{% if page == 'articles_single' %}
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>{{ title }}</h1>
+            <h4>Escrito por {{ author }} | {{ publishedDate }}</h4>
+            <p>{{ content | linebreaks }}</p>
+        </div>
+    </div>
+{% endif %}
+
+{% endblock %}

@@ -94,6 +94,22 @@ class Article(models.Model):
 #----------------------------------------------------------
 
 
+# Similar to Color, Photo can be featured alongside Project.
+# Multiple instances of Photo can also be created in the admin panel.
+class Photo(models.Model):
+    projectName = models.ForeignKey(Project)
+    photo = models.ImageField(upload_to='uploads/projects/', max_length=45)
+
+    def projectTitle(self):
+        return self.projectName.title
+#end Photo
+
+#----------------------------------------------------------
+
+
+
+
+
 
 class Message(models.Model):
     sender  = models.EmailField()

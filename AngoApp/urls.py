@@ -28,7 +28,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 
 
 urlpatterns = [
-    # Admin / Auth / Status Codes Views
+    # Admin / Auth / Status Code Views
     url(r'^401', site.error_401, name='401'),
     url(r'^403', site.error_403, name='403'),
     url(r'^404', site.error_404, name='404'),
@@ -38,26 +38,32 @@ urlpatterns = [
     url(r'^dash.*', site.error_404),
     url(r'^wp.*', site.error_404),
     url(r'^login.*', site.error_404),
-    url(r'^i/sys/', admin.site.urls, name='sys'),
 
+    # ------------------
+    # Login and Logout Views
+    url(r'^i/sys/', admin.site.urls, name='sys'),
     url(r'^i/logout/$', logout, {'template_name': 'masters/logout.html'}, name='logout'),
     url(r'^i/login/$', site.userlogin, name='userlogin'),
     url(r'^i/auth/$', site.userauth, name='userauth'),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    # -------------------
 
 
     # MAIN Views
     url(r'^$', site.home, name='home'),
-    url(r'^portfolio/(?P<key>\D+)', site.project_detail, name='project'),
+    url(r'^portfolio/(?P<keyword>\D+)', site.project_detail, name='portfolio-detail'),
     url(r'^portfolio/', site.projects, name='portfolio'),
     url(r'^about/', site.about, name='about'),
     url(r'^services/', site.services, name='services'),
     url(r'^process/', site.process, name='process'),
+    url(r'^blog/(?P<keyword>\D+)', site.article_single, name='blog-single'),
+    url(r'^blog/', site.articles, name='blog'),
+    url(r'^articles/', site.articles, name='articles'),
 
     # SEARCH
     url(r'^p/', search.search, name='search'),
 
-    #----------
+    #--------------
 
     # API Views
     url(r'^api/people/(?P<pk>\d+)', API.PersonDetailAPIView.as_view()),

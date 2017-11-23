@@ -1,0 +1,62 @@
+{% extends 'masters/master.html' %}
+{% load static from staticfiles %}
+
+
+
+{% block content %}
+{% if page == 'portfolio_home' %}
+<!-- Portfolio Section -->
+<div id="features">
+    <div class="container"> <!-- Container -->
+        <div class="section-title text-left center">
+            <h1 class="heading">Portofolio</h1>
+            <div class="clearfix"></div>
+        </div>
+        <div class="space"></div>
+
+        <div id="lightbox" class="row">
+          {% for project in projects %}
+            <div class="col-sm-6 col-md-4 col-lg-4 branding" >
+{#                <h1>{{project.title}}</h1>#}
+{#                <h4>{{project.publishedDate | date}}</h4>#}
+                <div class="portfolio-item">
+                    <div class="hover-bg" >
+                        <a href="{% url 'portfolio-detail' project.slug %}">
+                        {% if project.artwork %}
+                        <img src="{{project.artwork.url}}" class="img-responsive" alt="Image of {{ project.title }}">
+                        {% endif %}
+                        </a>
+                    </div>
+                </div>
+{#                <h1>{{ project.title }}</h1>#}
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if page == 'portfolio_detail' %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div style="background-image: url('{{artwork}}');"></div>
+    </div>
+
+    <div class="container">
+    <h1>{{ title }}</h1>
+        {% if photos %}
+            <div class="row">
+            {% for i in photos %}
+                <div class="col-md-4">
+                <img class="img-responsive" src="{{ i.photo.url }}" alt="{{ title }}">
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endif %}
+
+{% endblock %}
