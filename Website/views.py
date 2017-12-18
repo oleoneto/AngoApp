@@ -145,8 +145,9 @@ def process(request):
     return render(request, 'Website/process.html')
 
 def services(request):
-    form=client_form
-    return render(request, 'Website/services.html',{'form':form})
+    form=clientForm
+    return render(request, 'Website/services.html', {
+        'form': form })
 
 def articles(request):
     articles = Article.objects.filter(status='p').order_by('-publishedDate')

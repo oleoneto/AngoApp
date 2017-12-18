@@ -13,7 +13,8 @@ class Client(models.Model):
     service_type=models.CharField(max_length=2, choices=SERVICES, default='DA')
 
     def __str__(self):
-        return self.name
+        name = "{} {}".format(self.first_name, self.last_name)
+        return name
 
 
 
