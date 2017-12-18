@@ -1,6 +1,7 @@
 from ViewsLibraries import *
 from Choices import *
 from .search import search
+from .forms import *
 
 # Create your views here.
 
@@ -144,7 +145,8 @@ def process(request):
     return render(request, 'Website/process.html')
 
 def services(request):
-    return render(request, 'Website/services.html')
+    form=client_form
+    return render(request, 'Website/services.html',{'form':form})
 
 def articles(request):
     articles = Article.objects.filter(status='p').order_by('-publishedDate')
