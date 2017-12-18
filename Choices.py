@@ -18,6 +18,16 @@ IDIOMAS = (
     ('ro', 'Roumain'),
 )
 
+SERVICES=(
+    ('DA','Desenvolvimento de Applicativos'),
+    ('DW','Desenvolvimento de Websites'),
+    ('DA','Design de Applicativos'),
+    ('DJ','Desenvolvimento de Jogos'),
+    ('DB','Desenvolvimento de Backend'),
+    ('AC','Análise de Clientes e Mercados'),
+    
+)
+
 
 TOPICS = (
     ('code', 'Coding'),

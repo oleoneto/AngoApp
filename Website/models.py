@@ -1,6 +1,24 @@
 from ModelsLibraries import *
 
 
+
+
+# Create your models here.
+class Client(models.Model):
+    first_name = models.CharField(max_length=45, blank=False)
+    last_name = models.CharField(max_length=45, blank=False)
+    message = models.TextField(blank=False,max_length=1000)
+    email=models.EmailField(blank=False)
+    cellphone=models.IntegerField(blank=False)
+    service_type=models.CharField(max_length=2, choices=SERVICES, default='DA')
+
+    def __str__(self):
+        return self.name
+
+
+
+
+#----------------------------------------------------------
 # Create your models here.
 class Person(models.Model):
     name = models.CharField(max_length=45, blank=False)

@@ -25,3 +25,10 @@ class MessageForm(forms.Form):
     class Meta:
         model = Message
         fields = ('sender', 'message', 'origin', 'subject')
+        
+        
+        
+class clientForm(forms.Form):
+    class Meta:
+        model=Client
+        fields="__all__"
