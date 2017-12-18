@@ -10,6 +10,10 @@ class Person(models.Model):
     bio = models.TextField(max_length=550, blank=True)
     status = models.CharField(max_length=1, choices=STATUS_CHOICES, default='d')
     slug = models.SlugField(max_length=50, unique=True, blank=False)
+    linkedin = models.URLField(blank=False, default="https://linkedin/company/angoapp")
+    github = models.URLField(blank=True)
+    facebook = models.URLField(blank=True)
+    twitter = models.URLField(blank=True)
 
     class Meta:
         verbose_name_plural = "Persons"
