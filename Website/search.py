@@ -6,7 +6,7 @@ from .models import *
 
 
 # SEARCH in Articles
-def SearchArticles(keyword, request):
+def SearchArticles(keyword):
     try:
         articles = Article.objects.filter(title__icontains=keyword).filter(status='p')
         if not articles:
@@ -47,8 +47,6 @@ def SearchProjects(keyword):
         projects = Project.objects.filter(title__icontains=keyword).filter(status='p')
         if not projects:
             projects = Project.objects.filter(description__icontains=keyword).filter(status='p')
-            if not projects:
-                projects = Project.objects.filter(author__name__icontains=keyword).filter(status='p')
     except Person.DoesNotExist:
         error = True
         raise Http404('No Project')
@@ -62,10 +60,9 @@ def SearchProjects(keyword):
 def search(request):
     if request.POST:
         requestKeyword = request.POST['keyword']
-        articles = SearchArticles(requestKeyword, request)
+        articles = SearchArticles(requestKeyword)
         people = SearchPeople(requestKeyword)
         projects = SearchProjects(requestKeyword)
-        user = 'user'
         error = False
         totalresults = articles.__len__()+people.__len__()+projects.__len__()
     else:
@@ -86,7 +83,6 @@ def search(request):
         'articles': articles,
         'people': people,
         'projects': projects,
-        'user': user,
         'total': totalresults,
     })
 

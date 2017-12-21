@@ -8,7 +8,6 @@ Using the django rest framework to query, serialize, and generate views for our 
 """
 from rest_framework.serializers import ModelSerializer
 from Website.models import *
-from Work.models import *
 
 class PersonSerializer(ModelSerializer):
     class Meta:

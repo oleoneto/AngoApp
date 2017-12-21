@@ -22,6 +22,12 @@
         <li><a href="{% url 'services' %}" class="page-scroll">Serviços</a></li>
         <li><a href="{% url 'portfolio' %}" class="page-scroll">Portfólio</a></li>
       </ul>
+
+        <form action="/p/" method="post" class="form-inline">
+          {% csrf_token %}
+          <input type="text" name="keyword" class="form-control">
+        </form>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

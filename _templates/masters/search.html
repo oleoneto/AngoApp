@@ -1,0 +1,33 @@
+{% extends 'masters/master.html' %}
+
+
+
+
+{% block content %}
+
+
+<div class="container top-100">
+
+    {% if articles %}
+        {% for article in articles %}
+            <h1>{{ article }}</h1>
+        {% endfor %}
+    {% endif %}
+
+
+    {% if people %}
+        {% for person in people %}
+            <h1>{{ person }}</h1>
+        {% endfor %}
+    {% endif %}
+
+
+    {% if projects %}
+        {% for project in projects %}
+            <h1>{{ project }}</h1>
+        {% endfor %}
+    {% endif %}
+
+</div>
+
+{% endblock %}
