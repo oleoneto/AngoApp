@@ -8,7 +8,7 @@
 				<div class="col-md-12 section-heading">
 					<h2 class="to-animate">Sobre Nós</h2>
 					<div class="row">
-                        <div class="col-md-7  to-animate">
+                        <div class="col-md-7  to-a1nimate">
                             <h3>AngoApp é uma empresa que se foca em reforçar o sector tecnológico em Angola,
                                 África. AngoApp tem como suas funções centrais a criação de aplicativos móveis para a educação e
                                 entretenimento da população angolana assim como a automação de serviços das empresas nacionais.
@@ -29,7 +29,12 @@
         <img id="pinned-right" class="" src="{% static 'img/pinned-right.png' %}" alt="">
 
 
-        <div class="bg-gray top-100 bottom-100">
+
+
+	{% include "snippets/snip_partners.html" %}
+
+
+        <div class="bg-white top-100 bottom-100">
         <div class="container" id="team">
         <div class="col-md-12 section-heading text-center to-animate">
             <h2>Quem Somos</h2>
@@ -56,6 +61,7 @@
         {% endfor %}
         </div>
         </div>
+	
 </div>
 
 </div>
