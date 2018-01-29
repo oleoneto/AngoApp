@@ -61,7 +61,7 @@ urlpatterns = [
     url(r'^articles/', site.articles, name='articles'),
 
     # SEARCH
-    url(r'^p/', search.search, name='search'),
+    url(r'^p/', search.SearchViewController, name='search'),
 
     #--------------
 
@@ -73,7 +73,7 @@ urlpatterns = [
     url(r'^api/projects/(?P<slug>\D+)', API.ProjectDetailAPIViewSlug.as_view()),
     url(r'^api/projects', API.ProjectListAPIView.as_view()),
 
-    #----------
+    #--------------
 
     # REDIRECT Views
     url(r'^youtube', site.azinca),

@@ -1,13 +1,10 @@
 <div class="bg-gray">
     <div class="container">
-        <form action="">
-            {% csrf_token %}
             <div class="form-group">
-                <div class="form-group">
-                    {{ form.service_type }}
-                </div>
+                <form action="" method="post" class="form-inline">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                </form>
             </div>
-        </form>
-
     </div>
 </div>

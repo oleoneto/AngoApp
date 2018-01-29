@@ -21,7 +21,7 @@ SECRET_KEY = 's6uem!m&mtiht2+oi43g1gu3&_n759+qha9&ktwofo$&pl@6xa'
 DEBUG = True
 
 if DEBUG:
-    ALLOWED_HOSTS = ['127.0.0.1', 'localhost' ,'.localtunnel.me',]
+    ALLOWED_HOSTS = ['127.0.0.1', 'localhost' ,'.localtunnel.me', 'io', ]
 else:
     ALLOWED_HOSTS = ['.angoapp.com',]
 

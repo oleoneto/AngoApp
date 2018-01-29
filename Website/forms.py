@@ -24,14 +24,15 @@ class ContactForm(forms.Form):
 
 
 # Message Form
-class MessageForm(forms.Form):
+class MessageForm(forms.ModelForm):
     class Meta:
         model = Message
-        fields = ('sender', 'message', 'origin', 'subject')
+        fields = '__all__'
+
         
         
         
-class clientForm(forms.ModelForm):
+class ClientForm(forms.ModelForm):
     class Meta:
         model = Client
         fields = '__all__'
