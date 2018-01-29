@@ -23,7 +23,7 @@
       </ul>
 
       <div class="nav navbar-nav navbar-right">
-        <form class="navbar-form navbar-left" method="post" action="/p/">
+        <form id="main-search" class="navbar-form navbar-left" method="post" action="/p/">
             {% csrf_token %}
         <div class="form-group">
           <input name="keyword" type="text" class="form-control" placeholder="Search">

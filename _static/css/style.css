@@ -235,12 +235,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default {
-  background-color: #222222;
+  background-color: #ffffff;
   border: none;
+  border-bottom: 1px solid #eeeeee;
   color: #fff;
 }
 .navbar-default input{
   background-color: inherit;
+}
+
+#main-search {
+  position: relative;
+}
+
+#main-search button {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  border: none;
+  background-color: inherit;
+  color: #e7c3c3;
+}
+@media (max-width: 768px) {
+  #main-search button{
+    top: 10px;
+  }
+}
+
+#main-search button:hover{
+  background-color: inherit !important;
+  color: #eeeeee !important;
 }
 
 
@@ -1177,7 +1201,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 50px;
     font-weight: 300;
     color: #333;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     position: relative;
     display: block;
     /* padding-bottom: 5px; */
@@ -1217,4 +1241,8 @@ h1, h2, h3, h4, h5, h6 {
   /*opacity: .8;*/
   z-index: -1;
   background-color: #333333;
+}
+
+.border-top {
+  border-top: 1px solid #eeeeee;
 }
