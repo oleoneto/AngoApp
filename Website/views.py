@@ -85,6 +85,8 @@ def home(request):
 
 def about(request):
     people = Person.objects.filter(administrator=True).order_by('name')
+    partners = Partner.objects.order_by('name')
+
     total = people.count()
     if total%3 == 0:
         grid = 'col-lg-4 col-md-4 col-sm-12'
@@ -97,6 +99,7 @@ def about(request):
         'people': people,
         'totalPeople': total,
         'grid': grid,
+        'partners':partners,
     })
 
 def projects(request):

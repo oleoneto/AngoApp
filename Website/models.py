@@ -116,6 +116,24 @@ class Article(models.Model):
 
 #----------------------------------------------------------
 
+#----------------------------------------------------------
+
+
+
+
+class Partner(models.Model):
+    name = models.CharField(max_length=45)
+    link = models.URLField(max_length=250)
+    image = models.ImageField(upload_to='uploads/partners/', max_length=45)
+    
+    def __str__(self):
+        return self.name
+
+
+
+
+#----------------------------------------------------------
+
 
 # Similar to Color, Photo can be featured alongside Project.
 # Multiple instances of Photo can also be created in the admin panel.

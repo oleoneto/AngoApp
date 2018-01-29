@@ -61,6 +61,12 @@ class ProjectAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
     inlines = [PhotoInline]
 
+# parterns
+class PartnerAdmin(admin.ModelAdmin):
+    ordering = ['name']
+    list_display = ['name', 'link']
+
+
 
 ###___________________________________________
 
@@ -80,3 +86,4 @@ admin.site.site_header = "AngoApp"
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Person, PersonAdmin)
+admin.site.register(Partner, PartnerAdmin)
