@@ -1,27 +1,21 @@
 
 <style>
-    
-
-.trusted-by-logos >li{
-   display: inline;
-   padding: 10px;
-    
-}
-
+{# Main Title #}
 .lead {
     text-align: center;
 }
 
-.text-title{
-    font-size: 100px;
-    
+
+{# Images #}
+.trusted-by-logos >li{
+   display: inline;
+   padding: 10px;
+   display: inline-block;
 }
 
 .img-partner{
     max-width: 200px;
     max-height: 150px;
-    display: inline;
-    
 }
 
 </style>
@@ -33,22 +27,18 @@
 <div class="lead">
 <h2 class="section-heading">Nossos parceiros</h2>
 <p class="text-intro">
-ake it simple for anyone to invest in businesses, many of which have the support of
-top accelerators, corporates and brands.
+
+
 </p>
 </div>
-<ul class="trusted-by-logos">
+<ul class="trusted-by-logos text-center">
     {% for partner in partners %}
-    
         <li class="trusted-by-logo passion-capital">
             <img alt="Passion Capital" class="img-responsive img-partner" src="{{partner.image.url}}"
                  data-src-small="{{partner.image.url}}" data-src-medium="{{partner.image.url}}"
                  data-src-large="{{partner.image.url}}">
-                <!--<p>{{partner.name}}</p>-->
+            <p>{{partner.name}}</p>
         </li>
-        
-
-
     {% endfor %}
 </ul>
 </article>

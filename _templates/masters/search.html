@@ -23,7 +23,10 @@
     {% if people %}
         <div class="col-md-4">
         {% for person in people %}
+            <a href="/about/#about">
             <h4>{{ person }}</h4>
+            </a>
+
         {% endfor %}
         </div>
     {% endif %}

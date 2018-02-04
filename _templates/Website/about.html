@@ -14,12 +14,8 @@
                                 entretenimento da população angolana assim como a automação de serviços das empresas nacionais.
                                 <br>
                                 <br>
-                                Flannel asymmetrical bicycle rights chillwave swag. Taiyaki of stumptown la croix,
-                                knausgaard scenester mlkshk intelligentsia tattooed vexillologist direct trade shabby chic normcore vaporware.
-                                Vice shabby chic waistcoat, franzen brooklyn distillery street art adaptogen pinterest 3 wolf moon artisan.
-                                Raclette umami viral, fashion axe kickstarter poke chambray trust fund. Iceland sustainable jianbing lo-fi master
-                                vaporware pok pok jean shorts. Sriracha lomo cold-pressed enamel pin next level occupy portland viral
-                                umami tote bag shabby chic tumeric keytar. Pickled jianbing williamsburg.
+                                AngoApp foi criada a por dois estudantes de engenharia informática que notaram uma escassez de produtos e serviços no sector tecnológico angolano.  Pelo interesse desde cedo demonstrado no sector de aplicativos moveis e web , resolveram criar uma empresa que serviria para reduzir esta escassez
+Apesar de ser uma empresa centrada para Angola, a AngoApp nesse momento se encontra localizada em Indianapolis, Indiana nos Estados Unidos da America. Os criadores desta empresa são estudantes que actualmente trabalham na sua licenciatura em Engenharia Informática.
                             </h3>
                         </div>
 					</div>
@@ -34,22 +30,21 @@
 	{% include "snippets/snip_partners.html" %}
 
 
-        <div class="bg-white top-100 bottom-100">
+        <div class="bg-white top-100 bottom-100" id="about" aria-labelledby="about">
         <div class="container" id="team">
         <div class="col-md-12 section-heading text-center to-animate">
             <h2>Quem Somos</h2>
         </div>
         <div class="row">
         {% for person in people %}
-        <div class="col-md-3 to-animate">
+
+            <div class="col-md-4">
             <div class="person">
                 <img src="{{person.photo.url}}" class="img-responsive team-image" alt="{{ person.name }}">
                 <div class="person-social-link">
                     <a href="{{ person.linkedin }}" target="_blank"><i class="icon-linkedin"></i></a>
                 </div>
             </div>
-        </div>
-            <div class="col-md-3">
             <div class="position">{{person.role}}</div>
             <h2 class="name">{{person.name}}</h2>
             <p>{{ person.bio | slice:"210" }}</p>

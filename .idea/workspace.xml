@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b2d00c7-4bf8-45a1-b9af-e1e82140397e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Website/migrations/0006_partner.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Website/migrations/0007_auto_20180104_1534.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_media/uploads/partners/Azinca.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_media/uploads/partners/ekletik.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_templates/snippets/snip_partners" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_templates/snippets/snip_partners.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/snip_userform.html" />
-      <change beforePath="$PROJECT_DIR$/Website/admin.py" afterPath="$PROJECT_DIR$/Website/admin.py" />
-      <change beforePath="$PROJECT_DIR$/Website/models.py" afterPath="$PROJECT_DIR$/Website/models.py" />
-      <change beforePath="$PROJECT_DIR$/Website/views.py" afterPath="$PROJECT_DIR$/Website/views.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/AngoApp.iml" afterPath="$PROJECT_DIR$/.idea/AngoApp.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/_static/css/style.css" afterPath="$PROJECT_DIR$/_static/css/style.css" />
       <change beforePath="$PROJECT_DIR$/_templates/Website/about.html" afterPath="$PROJECT_DIR$/_templates/Website/about.html" />
+      <change beforePath="$PROJECT_DIR$/_templates/Website/portfolio.html" afterPath="$PROJECT_DIR$/_templates/Website/portfolio.html" />
+      <change beforePath="$PROJECT_DIR$/_templates/masters/search.html" afterPath="$PROJECT_DIR$/_templates/masters/search.html" />
+      <change beforePath="$PROJECT_DIR$/_templates/snippets/snip_partners.html" afterPath="$PROJECT_DIR$/_templates/snippets/snip_partners.html" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,135 +19,68 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52529454">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/AngoApp/settings.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="search.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Website/search.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="117" column="10" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
-                    <element signature="e#112#1132#0" expanded="false" />
-                    <element signature="e#1170#2400#0" expanded="false" />
-                    <element signature="e#2437#3448#0" expanded="false" />
-                    <element signature="e#3491#4920#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Website/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-977">
-                  <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#472#546#0" expanded="false" />
-                    <element signature="e#551#610#0" expanded="false" />
-                    <element signature="e#1365#1396#0" expanded="false" />
-                    <element signature="e#1402#1423#0" expanded="false" />
-                    <element signature="e#1553#1569#0" expanded="false" />
-                    <element signature="e#2343#2385#0" expanded="false" />
-                    <element signature="e#2418#2435#0" expanded="false" />
-                    <element signature="e#2464#2512#0" expanded="false" />
-                    <element signature="e#2548#2572#0" expanded="false" />
-                    <element signature="e#3155#3199#0" expanded="false" />
-                    <element signature="e#3231#3254#0" expanded="false" />
-                    <element signature="e#3290#3313#0" expanded="false" />
-                    <element signature="e#3342#3386#0" expanded="false" />
-                    <element signature="e#3419#3436#0" expanded="false" />
-                    <element signature="e#3441#3500#0" expanded="false" />
-                    <element signature="e#4192#4221#0" expanded="false" />
-                    <element signature="e#4222#4232#0" expanded="false" />
-                    <element signature="e#4333#4690#0" expanded="false" />
-                    <element signature="e#4567#4638#0" expanded="false" />
-                    <element signature="e#4671#4690#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/_templates/masters/search.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="122">
-                  <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/_templates/Website/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/AngoApp/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-                  <folding>
-                    <element signature="e#135#176#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Website/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
-                    <element signature="e#212#380#0" expanded="false" />
-                    <element signature="e#410#578#0" expanded="false" />
-                    <element signature="e#608#776#0" expanded="false" />
-                    <element signature="e#806#974#0" expanded="false" />
-                    <element signature="e#1004#1172#0" expanded="false" />
-                    <element signature="e#1246#1290#0" expanded="false" />
-                    <element signature="e#1319#1704#0" expanded="false" />
-                    <element signature="e#1777#2322#0" expanded="false" />
-                    <element signature="e#2348#2874#0" expanded="false" />
-                    <element signature="e#2903#3546#0" expanded="false" />
-                    <element signature="e#3590#4200#0" expanded="false" />
-                    <element signature="e#4228#4274#0" expanded="false" />
-                    <element signature="e#4303#4401#0" expanded="false" />
-                    <element signature="e#4430#4655#0" expanded="false" />
-                    <element signature="e#4700#5608#0" expanded="false" />
-                    <element signature="e#5738#5813#0" expanded="false" />
-                    <element signature="e#5840#5878#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#212#380#0" expanded="false" />
+                <element signature="e#410#578#0" expanded="false" />
+                <element signature="e#806#974#0" expanded="false" />
+                <element signature="e#1246#1290#0" expanded="false" />
+                <element signature="e#1319#1704#0" expanded="false" />
+                <element signature="e#1777#2322#0" expanded="false" />
+                <element signature="e#2903#3546#0" expanded="false" />
+                <element signature="e#3590#4200#0" expanded="false" />
+                <element signature="e#4228#4274#0" expanded="false" />
+                <element signature="e#4303#4401#0" expanded="false" />
+                <element signature="e#4430#4655#0" expanded="false" />
+                <element signature="e#4700#5608#0" expanded="false" />
+                <element signature="e#5738#5813#0" expanded="false" />
+                <element signature="e#5840#5878#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="snip_partners.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_partners.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_templates/Website/portfolio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="1260" column="14" lean-forward="false" selection-start-line="1260" selection-start-column="14" selection-end-line="1260" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -209,8 +138,6 @@
         <option value="$PROJECT_DIR$/_templates/snippets/snip_main_footer.html" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_testimonials.html" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_main_slider.html" />
-        <option value="$PROJECT_DIR$/_templates/Website/about.html" />
-        <option value="$PROJECT_DIR$/_templates/Website/portfolio.html" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_services.html" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_pricing.html" />
         <option value="$PROJECT_DIR$/_templates/Website/services.html" />
@@ -220,13 +147,16 @@
         <option value="$PROJECT_DIR$/_templates/snippets/snip_main_nav.html" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_userform.html" />
         <option value="$PROJECT_DIR$/Website/forms.py" />
-        <option value="$PROJECT_DIR$/_static/css/style.css" />
         <option value="$PROJECT_DIR$/AngoApp/settings.py" />
         <option value="$PROJECT_DIR$/AngoApp/urls.py" />
         <option value="$PROJECT_DIR$/ViewsLibraries.py" />
         <option value="$PROJECT_DIR$/Website/views.py" />
-        <option value="$PROJECT_DIR$/_templates/masters/search.html" />
         <option value="$PROJECT_DIR$/Website/search.py" />
+        <option value="$PROJECT_DIR$/_templates/masters/search.html" />
+        <option value="$PROJECT_DIR$/_templates/Website/about.html" />
+        <option value="$PROJECT_DIR$/_templates/snippets/snip_partners.html" />
+        <option value="$PROJECT_DIR$/_static/css/style.css" />
+        <option value="$PROJECT_DIR$/_templates/Website/portfolio.html" />
       </list>
     </option>
   </component>
@@ -248,10 +178,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="419" />
-    <option name="width" value="1680" />
-    <option name="height" value="627" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="55" />
+    <option name="width" value="1280" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -268,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,18 +208,36 @@
             <path>
               <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="_static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="_static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="_templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="_templates" type="462c0819:PsiDirectoryNode" />
               <item name="Website" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.gherkin.gui.PyBDDProjectConfigurable" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -332,9 +279,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="AngoApp.settings" />
       </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="AngoApp" />
@@ -366,22 +313,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="419" width="1680" height="627" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280943" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2200393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12271062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08797654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21992481" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19628432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -421,32 +368,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/_templates/masters/search.html</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_templates/masters/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_media_carousel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_media_gallery.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -802,16 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/Website/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="67" lean-forward="false" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
-          <folding>
-            <element signature="e#1139#1184#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_pricing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
@@ -890,25 +806,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/Website/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="46" column="11" lean-forward="false" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="247" column="14" lean-forward="false" selection-start-line="247" selection-start-column="14" selection-end-line="247" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_templates/masters/master.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewsLibraries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/Website/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -923,68 +839,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/Website/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewsLibraries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#212#380#0" expanded="false" />
-            <element signature="e#410#578#0" expanded="false" />
-            <element signature="e#608#776#0" expanded="false" />
-            <element signature="e#806#974#0" expanded="false" />
-            <element signature="e#1004#1172#0" expanded="false" />
-            <element signature="e#1246#1290#0" expanded="false" />
-            <element signature="e#1319#1704#0" expanded="false" />
-            <element signature="e#1777#2322#0" expanded="false" />
-            <element signature="e#2348#2874#0" expanded="false" />
-            <element signature="e#2903#3546#0" expanded="false" />
-            <element signature="e#3590#4200#0" expanded="false" />
-            <element signature="e#4228#4274#0" expanded="false" />
-            <element signature="e#4303#4401#0" expanded="false" />
-            <element signature="e#4430#4655#0" expanded="false" />
-            <element signature="e#4700#5608#0" expanded="false" />
-            <element signature="e#5738#5813#0" expanded="false" />
-            <element signature="e#5840#5878#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngoApp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_templates/masters/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+        <state relative-caret-position="351">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_partners">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-977">
+        <state relative-caret-position="300">
           <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="e#472#546#0" expanded="false" />
@@ -1011,17 +884,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/Website/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Website/search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="117" column="10" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
+        <state relative-caret-position="362">
+          <caret line="157" column="42" lean-forward="false" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
             <element signature="e#112#1132#0" expanded="false" />
-            <element signature="e#1170#2400#0" expanded="false" />
             <element signature="e#2437#3448#0" expanded="false" />
-            <element signature="e#3491#4920#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngoApp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#212#380#0" expanded="false" />
+            <element signature="e#410#578#0" expanded="false" />
+            <element signature="e#806#974#0" expanded="false" />
+            <element signature="e#1246#1290#0" expanded="false" />
+            <element signature="e#1319#1704#0" expanded="false" />
+            <element signature="e#1777#2322#0" expanded="false" />
+            <element signature="e#2903#3546#0" expanded="false" />
+            <element signature="e#3590#4200#0" expanded="false" />
+            <element signature="e#4228#4274#0" expanded="false" />
+            <element signature="e#4303#4401#0" expanded="false" />
+            <element signature="e#4430#4655#0" expanded="false" />
+            <element signature="e#4700#5608#0" expanded="false" />
+            <element signature="e#5738#5813#0" expanded="false" />
+            <element signature="e#5840#5878#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_partners.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="1260" column="14" lean-forward="false" selection-start-line="1260" selection-start-column="14" selection-end-line="1260" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/Website/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
