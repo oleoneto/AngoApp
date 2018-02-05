@@ -1,9 +1,9 @@
 {% load static from staticfiles %}
 <div id="slider" data-section="home">
 <div class="owl-carousel owl-carousel-fullwidth">
-<div class="item" style="background-image:url(images/slide_5.jpg)">
+<div class="item" style="background-image:url({% static "img/IMD2.png" %});background-size: cover">
     <div class="overlay"></div>
-    <div class="container" style="position: relative;">
+    <div class="container" style="position: relative; ">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="owl-text-wrap">
@@ -18,8 +18,8 @@
         </div>
     </div>
 </div>
-<div class="item" style="background: #352f44;">
-    <div class="container" style="position: relative;">
+<div class="item" style="background: #352f44;background-image:url({% static "img/IMG_2.JPG" %});background-size: cover">
+    <div class="container" style="position: relative; ">
         <div class="row">
             <div class="col-md-7 col-sm-7">
                 <div class="owl-text-wrap">
@@ -38,7 +38,7 @@
         </div>
     </div>
 </div>
-<div class="item" style="background: #38569f;">
+<div class="item" style="background: #38569f;background-image:url({% static "img/IMG_4.JPG" %}); background-size: cover">
     <div class="container" style="position: relative;">
         <div class="row">
             <div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
