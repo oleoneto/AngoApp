@@ -1,10 +1,48 @@
 <div class="bg-gray">
     <div class="container">
-            <div class="form-group">
-                <form action="" method="post" class="form-inline">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                </form>
+
+        <h2 class="col-md-12 section-heading text-center">Entre em Contacto Connosco</h2>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group item col-md-6">
+                <a class="col-md-4">Primeiro Nome </a><input type="text" class="form-control " placeholder="primeiro nome">
             </div>
+
+            <div class="form-group item col-md-6">
+                <a class="col-md-4">Ultimo Nome </a><input type="text" class="form-control" placeholder="ultimo nome">
+            </div>
+
+            <div class="form-group item col-md-6">
+                <a class="col-md-4">Email </a><input type="email" class="form-control" placeholder="email">
+            </div>
+
+            <div class="form-group item col-md-6">
+                <a class="col-md-4">Telefone </a><input type="tel" class="form-control" placeholder="telefone">
+            </div>
+
+
+
+            <div class="col-md-6">
+                <a class="col-md-4">Mensagem </a><textarea rows="4" cols="50" name="comment" form="usrform" placeholder="escreva aqui"></textarea>
+            </div>
+
+
+            <div class="form-group item col-md-6">
+
+                <a class="col-md-4">Tipo de Servico </a>
+                <select name="Tipo de Servico">
+                    <option value="Desenvolvimento de aplicativos">Desenvolvimento de aplicativos</option>
+                    <option value="Desenvolivimento de Website">Desenvolivimento de Website</option>
+                    <option value="Design de Aplicativos">Design de Aplicativos</option>
+                    <option value="Desenvolvimento Backend">Desenvolvimento Backend</option>
+                    <option value="Analize de Clientes e Mercados">Analize de Clientes e Mercados</option>
+
+                </select>
+
+            </div>
+            <br>
+
+            <button type="submit" class="btn btn-default col-md-2">Submeter</button>
+        </form>
+
     </div>
 </div>
