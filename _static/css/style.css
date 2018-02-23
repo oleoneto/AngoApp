@@ -23,7 +23,7 @@ a {
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #6173f4;
+  color: #2185d5;
   outline: none;
 }
 
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
   #header .navbar-brand {
-    color: #6173f4 !important;
+    color: #2185d5 !important;
   }
   #header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
   }
   #header #navbar li a:hover {
-    color: #6173f4 !important;
+    color: #2185d5 !important;
   }
   #header #navbar li a span:before {
     background: transparent !important;
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   #header #navbar li.active a {
     background: transparent;
     background: none;
-    color: #6173f4 !important;
+    color: #2185d5 !important;
   }
   #header #navbar li.active a span:before {
     visibility: visible;
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #6173f4;
+  background-color: #2185d5;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 #header.navbar-fixed-top .navbar-brand {
-  color: #6173f4;
+  color: #2185d5;
 }
 #header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
@@ -191,12 +191,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #header.navbar-fixed-top #navbar li a:hover {
-  color: #6173f4;
+  color: #2185d5;
 }
 #header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #6173f4;
+  color: #2185d5;
 }
 #header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #adadad;
 }
 #header .navbar-default .brand-slogan em {
-  color: #6173f4;
+  color: #2185d5;
   font-style: normal;
 }
 #header a {
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #testimonials {
-  background: #6173f4;
+  background: white;
 }
 #testimonials .section-heading h2 {
   color: black;
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.2);
 }
 #testimonials .section-heading .subtext h3 {
-  color: rgba(255, 255, 255, 0.5);
+  color: #2185d5;
 }
 #testimonials .box-testimony {
   margin-bottom: 2em;
@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 0;
   border-left: none;
   padding: 40px;
-  background: #fff;
+  background: #eee;
   position: relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -369,7 +369,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 100%;
   left: 40px;
   border-top: 15px solid black;
-  border-top-color: #fff;
+  border-top-color: #eee;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
 }
@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 56px;
   height: 56px;
   margin-top: -30px;
-  background: #6173f4;
+  background: #2185d5;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -400,14 +400,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 #testimonials .box-testimony .author {
   line-height: 20px;
-  color: white;
+  color: black;
   font-size: 20px;
   margin-left: 20px;
 }
 #testimonials .box-testimony .author .subtext {
   display: block;
-  color: rgba(255, 255, 255, 0.5);
+  color: #2185d5;
   font-size: 16px;
+}
+
+.quotation{
+
+  color: black;
 }
 
 #pricing .price-box {
@@ -422,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 #pricing .price-box.popular {
-  border: 2px solid #6173f4;
+  border: 2px solid #2185d5;
 }
 #pricing .price-box.popular .popular-text {
   top: 0;
@@ -431,7 +436,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -2em;
   position: absolute;
   padding: 4px 20px;
-  background: #6173f4;
+  background: #2185d5;
   color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -445,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   margin-left: -10px;
   border-top: 10px solid black;
-  border-top-color: #6173f4;
+  border-top-color: #2185d5;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
@@ -539,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #2fc5cc;
 }
 #our-services .box .icon.colored-6 {
-  background: #6173f4;
+  background: #2185d5;
 }
 #our-services .box .step-number {
   font-size: 16px;
@@ -576,7 +581,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #features .service .icon i {
   font-size: 40px;
-  color: #6173f4;
+  color: #2185d5;
 }
 #features .service .desc {
   width: 80%;
@@ -639,7 +644,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   height: 2px;
   width: 30px;
-  background: #6173f4;
+  background: #2185d5;
 }
 #press .press-item .press-img {
   position: absolute;
@@ -665,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .nav-toggle.active i::before, .nav-toggle.active i::after {
-  background: #6173f4;
+  background: #2185d5;
 }
 .nav-toggle:hover, .nav-toggle:focus, .nav-toggle:active {
   outline: none;
@@ -679,18 +684,18 @@ h1, h2, h3, h4, h5, h6 {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #6173f4;
+  color: #2185d5;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #6173f4;
+  background: #2185d5;
   transition: all .2s ease-out;
 }
 .nav-toggle i::before, .nav-toggle i::after {
   content: '';
   width: 25px;
   height: 3px;
-  background: #6173f4;
+  background: #2185d5;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -797,14 +802,14 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #6173f4;
+  background: #2185d5;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #6173f4;
+  background: #2185d5;
 }
 .btn:hover, .btn:active, .btn:focus {
   background: #393e46 !important;
@@ -844,11 +849,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: none;
 }
 .social li a.social-box {
-  background: #6173f4;
+  background: #2185d5;
   color: #fff;
 }
 .social li a.social-circle {
-  background: #6173f4;
+  background: #2185d5;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -859,11 +864,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #393e46 !important;
 }
 .social.social-box a {
-  background: #6173f4;
+  background: #2185d5;
   color: #fff;
 }
 .social.social-circle a {
-  background: #6173f4;
+  background: #2185d5;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
