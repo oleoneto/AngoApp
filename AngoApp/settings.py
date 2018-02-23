@@ -23,7 +23,7 @@ DEBUG = False
 if DEBUG:
     ALLOWED_HOSTS = ['127.0.0.1', 'localhost' ,'.angoapp.com', 'io', ]
 else:
-    ALLOWED_HOSTS = ['.angoapp.com',]
+    ALLOWED_HOSTS = ['.angoapp.com', '174.138.62.51']
 
 
 # Application definition
