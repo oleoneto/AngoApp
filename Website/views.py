@@ -84,7 +84,7 @@ def home(request):
     })
 
 def about(request):
-    people = Person.objects.filter(administrator=True).order_by('name')
+    people = Person.objects.filter(administrator=True).order_by('-name')
     partners = Partner.objects.order_by('name')
 
     total = people.count()

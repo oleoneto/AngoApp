@@ -1,6 +1,6 @@
 {% load static from staticfiles %}
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top bg-gray">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -14,10 +14,10 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse text-white" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class=""><a href="{% url 'about'    %}">Sobre Nós</a></li>
-        <li class=""><a href="{% url 'process'  %}">Processo</a></li>
+{#        <li class=""><a href="{% url 'process'  %}">Processo</a></li>#}
         <li class=""><a href="{% url 'services' %}">Serviços</a></li>
         <li class=""><a href="{% url 'portfolio'%}">Portfolio</a></li>
       </ul>
