@@ -17,7 +17,7 @@ body {
 }
 
 a {
-  color: #6173f4;
+  color:#2185d5;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #6173f4;
 }
 #testimonials .section-heading h2 {
-  color: white;
+  color: black;
 }
 #testimonials .section-heading h2:after {
   background: rgba(255, 255, 255, 0.2);
@@ -1179,7 +1179,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .position {
   text-transform: uppercase;
-  color: #00b8a9;
+  color: #2185d5;
 }
 
 
