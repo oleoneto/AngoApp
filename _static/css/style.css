@@ -1117,6 +1117,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.our_service_image{
+  width: 420px;
+  height: 220px;
+  border-radius: 10px;
+}
+
 .js .to-animate,
 .js .to-animate-2,
 .js .single-animate {

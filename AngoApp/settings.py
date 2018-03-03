@@ -18,12 +18,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 's6uem!m&mtiht2+oi43g1gu3&_n759+qha9&ktwofo$&pl@6xa'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 if DEBUG:
     ALLOWED_HOSTS = ['127.0.0.1', 'localhost' ,'.angoapp.com', 'io', ]
 else:
     ALLOWED_HOSTS = ['.angoapp.com', '174.138.62.51']
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'angoapp2016@gmail.com'
+EMAIL_HOST_PASSWORD = 'ANGOapp2017'
+EMAIL_PORT = 587
 
 
 # Application definition

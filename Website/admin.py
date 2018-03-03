@@ -5,6 +5,8 @@ Updated on November 19, 2017
 
 from django.contrib import admin
 from Website.models import *
+from Website.models import Message
+
 
 
 #_____________________________________________________
@@ -68,13 +70,18 @@ class PartnerAdmin(admin.ModelAdmin):
 
 
 
+class PartnerAdmin(admin.ModelAdmin):
+    ordering = ['name']
+    list_display = ['name', 'link']
+
+class MessageAdmin(admin.ModelAdmin):
+    ordering = ['first_name']
+    list_display = ['first_name', 'last_name', 'email',
+                    'cellphone', 'tipo_de_servico','created']
+
+
+
 ###___________________________________________
-
-
-
-
-
-
 
 
 
@@ -87,3 +94,4 @@ admin.site.register(Article, ArticleAdmin)
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Person, PersonAdmin)
 admin.site.register(Partner, PartnerAdmin)
+admin.site.register(Message,MessageAdmin)

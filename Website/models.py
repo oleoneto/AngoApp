@@ -10,14 +10,11 @@ class Client(models.Model):
     message = models.TextField(blank=False,max_length=1000)
     email=models.EmailField(blank=False)
     cellphone=models.IntegerField(blank=False)
-    service_type=models.CharField(max_length=2, choices=SERVICES, default='DA')
+    service_type=models.CharField(max_length=2, choices=SERVICES, default=' DA')
 
     def __str__(self):
         name = "{} {}".format(self.first_name, self.last_name)
         return name
-
-
-
 
 #----------------------------------------------------------
 # Create your models here.
@@ -147,20 +144,26 @@ class Photo(models.Model):
 
 #----------------------------------------------------------
 
-
-
-
-
-
 class Message(models.Model):
-    sender  = models.EmailField()
-    subject = models.CharField(max_length=50)
-    content = models.TextField()
-    date = models.DateTimeField(auto_now=True)
-    origin = models.CharField(max_length=200)
-
-    def summary(self):
-        return "Message about '{}' from '{}'".format(self.subject, self.sender)
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50, default='')
+    email = models.EmailField(blank=False)
+    cellphone = models.CharField(max_length=16, default='')
+    message = models.TextField(blank=True, max_length=200)
+    tipo_de_servico = models.CharField(max_length=50, default='Geral ')
+    created = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.subject
+        return self.first_name
+
+# class Content(models.Model):
+#     first_name = models.CharField(max_length=50)
+#     last_name = models.CharField(max_length=50, default='')
+#     email = models.EmailField(blank=False)
+#     cellphone = models.CharField(max_length=16, default='')
+#     message = models.TextField(blank=True, max_length=200)
+#     tipo_de_servico = models.CharField(max_length=50, default='Geral')
+#     created = models.DateField(auto_now=True)
+#
+#     def __str__(self):
+#         return self.first_name

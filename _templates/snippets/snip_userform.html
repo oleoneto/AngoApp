@@ -1,37 +1,39 @@
 <div class="bg-white top-60" >
-    <div class="container" href="userform" data-section="userform">
+    <div class="container" id="userform" href="userform" data-section="userform">
 
         <h2 class="col-md-12 section-heading text-center">Entre em Contacto Connosco</h2>
-        <form class="navbar-form navbar-left bottom-100" role="search">
+        <form method="post" class="navbar-form navbar-left bottom-100" role="search" >{% csrf_token %}
             <div class="form-group item col-md-6">
-                <p class="col-md-4">Primeiro Nome </p><input type="text" class="form-control " placeholder="primeiro nome" required>
+                <p class="col-md-4">Primeiro Nome </p><input type="text" class="form-control " placeholder="primeiro nome" name="first_name" required>
             </div>
 
             <div class="form-group item col-md-6">
-                <p class="col-md-4">Ultimo Nome </p><input type="text" class="form-control" placeholder="ultimo nome" required>
+                <p class="col-md-4">Ultimo Nome </p><input type="text" class="form-control" placeholder="ultimo nome" name="last_name" required>
             </div>
 
             <div class="form-group item col-md-6">
-                <p class="col-md-4"  >Email </p><input type="email" class="form-control" placeholder="email" required>
+                <p class="col-md-4"  >Email </p><input type="email" class="form-control" placeholder="email" name="email" required>
             </div>
 
             <div class="form-group item col-md-6">
-                <p class="col-md-4">Telefone </p><input type="tel" class="form-control" placeholder="telefone">
+                <p class="col-md-4">Telefone </p><input type="tel" class="form-control" placeholder="telefone"  name="cellphone">
             </div>
 
 
 
             <div class="col-md-6">
-                <p class="col-md-4">Mensagem </p><textarea rows="7" cols="50" name="comment" form="usrform" placeholder="escreva aqui" required></textarea>
+                <label  class="col-md-4" for="content">Mensagem</label>
+                <textarea name="content" required id="content" cols="50" rows="10" maxlength="500" minlength="10"></textarea>
+
             </div>
 
 
             <div class="form-group item col-md-6 ">
 
                 <p class="col-md-4" >Tipo de Servico </p>
-                <select name="Tipo de Servico" required>
-                    <option value=" " selected></option>
-                    <option value="Desenvolvimento de aplicativos">Desenvolvimento de aplicativos</option>
+                <select name="tipo_de_servico" required>
+
+                    <option value="Desenvolvimento de aplicativos " selected>Desenvolvimento de aplicativos</option>
                     <option value="Desenvolivimento de Website">Desenvolivimento de Website</option>
                     <option value="Design de Aplicativos">Design de Aplicativos</option>
                     <option value="Desenvolvimento Backend">Desenvolvimento Backend</option>
@@ -41,7 +43,7 @@
             </div>
             <br>
 
-            <button type="submit" class="btn btn-default col-md-2">Submeter</button>
+            <button type="submit" class="btn btn-default col-md-2"  >Submeter</button>
         </form>
 
     </div>

@@ -2,14 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b2d00c7-4bf8-45a1-b9af-e1e82140397e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/_static/img/desenvolvimento_do_aplicativo.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Website/submit_user_form.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/AngoApp/settings.py" afterPath="$PROJECT_DIR$/AngoApp/settings.py" />
+      <change beforePath="$PROJECT_DIR$/Website/admin.py" afterPath="$PROJECT_DIR$/Website/admin.py" />
+      <change beforePath="$PROJECT_DIR$/Website/forms.py" afterPath="$PROJECT_DIR$/Website/forms.py" />
+      <change beforePath="$PROJECT_DIR$/Website/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/Website/migrations/0001_initial.py" />
+      <change beforePath="$PROJECT_DIR$/Website/migrations/0002_auto_20171121_2021.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Website/migrations/0003_photo.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Website/migrations/0004_auto_20171218_0156.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Website/migrations/0005_client.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Website/migrations/0006_partner.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Website/migrations/0007_auto_20180104_1534.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Website/models.py" afterPath="$PROJECT_DIR$/Website/models.py" />
+      <change beforePath="$PROJECT_DIR$/Website/views.py" afterPath="$PROJECT_DIR$/Website/views.py" />
       <change beforePath="$PROJECT_DIR$/_static/css/style.css" afterPath="$PROJECT_DIR$/_static/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/_static/img/pinned-right.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_templates/Website/about.html" afterPath="$PROJECT_DIR$/_templates/Website/about.html" />
+      <change beforePath="$PROJECT_DIR$/_templates/snippets/snip_main_footer.html" afterPath="$PROJECT_DIR$/_templates/snippets/snip_main_footer.html" />
+      <change beforePath="$PROJECT_DIR$/_templates/snippets/snip_main_slider.html" afterPath="$PROJECT_DIR$/_templates/snippets/snip_main_slider.html" />
       <change beforePath="$PROJECT_DIR$/_templates/snippets/snip_process.html" afterPath="$PROJECT_DIR$/_templates/snippets/snip_process.html" />
       <change beforePath="$PROJECT_DIR$/_templates/snippets/snip_services.html" afterPath="$PROJECT_DIR$/_templates/snippets/snip_services.html" />
-      <change beforePath="$PROJECT_DIR$/_templates/snippets/snip_testimonials.html" afterPath="$PROJECT_DIR$/_templates/snippets/snip_testimonials.html" />
       <change beforePath="$PROJECT_DIR$/_templates/snippets/snip_userform.html" afterPath="$PROJECT_DIR$/_templates/snippets/snip_userform.html" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,62 +38,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="services.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_templates/Website/services.html">
+      <file leaf-file-name="snip_main_slider.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_main_slider.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="34" />
+            <state relative-caret-position="165">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="snip_services.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_services.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state relative-caret-position="2235">
+              <caret line="149" column="42" lean-forward="false" selection-start-line="149" selection-start-column="42" selection-end-line="149" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_static/css/style.css">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="1118" column="0" lean-forward="false" selection-start-line="1118" selection-start-column="0" selection-end-line="1118" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="snip_main_footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_main_footer.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Website/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="snip_process.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_process.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_templates/masters/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="187">
+              <caret line="177" column="91" lean-forward="false" selection-start-line="177" selection-start-column="91" selection-end-line="177" selection-end-column="91" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,8 +83,30 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AngoApp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="178">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+              <folding>
+                <element signature="e#56#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="snip_userform.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_userform.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -99,19 +118,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>section-heading h2:a</find>
-      <find>person</find>
-      <find>section-heading h2</find>
-      <find>h1</find>
-      <find>h2</find>
-      <find>section-heading</find>
-      <find>navbar-default</find>
-      <find>navbar</find>
       <find>docsArray</find>
       <find>Doc</find>
       <find>PortfolioProject</find>
@@ -127,13 +139,21 @@
       <find>home</find>
       <find>v</find>
       <find>.position</find>
-      <find>search</find>
       <find>#features .service .icon i</find>
       <find>#6173f4</find>
       <find>#testimonials .box-testimony blockquote</find>
       <find>#testimonials</find>
       <find>#testimonials .box-testimony blockquote:after</find>
       <find>item</find>
+      <find>conta</find>
+      <find>contac</find>
+      <find>search</find>
+      <find>site</find>
+      <find>person</find>
+      <find>pinned-right</find>
+      <find>namespace</find>
+      <find>message</find>
+      <find>date</find>
     </findStrings>
     <replaceStrings>
       <replace>#2185d5</replace>
@@ -155,33 +175,35 @@
         <option value="$PROJECT_DIR$/_static/js/main.js" />
         <option value="$PROJECT_DIR$/_templates/Website/projects.html" />
         <option value="$PROJECT_DIR$/_templates/Website/articles.html" />
-        <option value="$PROJECT_DIR$/Website/admin.py" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_main_header.html" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_pricing.html" />
-        <option value="$PROJECT_DIR$/Website/models.py" />
         <option value="$PROJECT_DIR$/_templates/Website/index.html" />
         <option value="$PROJECT_DIR$/Serializers.py" />
-        <option value="$PROJECT_DIR$/Website/forms.py" />
-        <option value="$PROJECT_DIR$/AngoApp/urls.py" />
         <option value="$PROJECT_DIR$/ViewsLibraries.py" />
         <option value="$PROJECT_DIR$/Website/search.py" />
         <option value="$PROJECT_DIR$/_templates/masters/search.html" />
-        <option value="$PROJECT_DIR$/_templates/snippets/snip_main_slider.html" />
-        <option value="$PROJECT_DIR$/_templates/Website/about.html" />
         <option value="$PROJECT_DIR$/_static/bootstrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/_templates/Website/process.html" />
         <option value="$PROJECT_DIR$/_templates/Website/services.html" />
-        <option value="$PROJECT_DIR$/Website/views.py" />
         <option value="$PROJECT_DIR$/_templates/Website/portfolio.html" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_partners.html" />
-        <option value="$PROJECT_DIR$/_templates/snippets/snip_main_footer.html" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_main_nav.html" />
-        <option value="$PROJECT_DIR$/AngoApp/settings.py" />
         <option value="$PROJECT_DIR$/_templates/snippets/snip_testimonials.html" />
-        <option value="$PROJECT_DIR$/_templates/snippets/snip_userform.html" />
-        <option value="$PROJECT_DIR$/_templates/snippets/snip_services.html" />
-        <option value="$PROJECT_DIR$/_templates/snippets/snip_process.html" />
+        <option value="$PROJECT_DIR$/Website/migrations/submit_user_form.py" />
+        <option value="$PROJECT_DIR$/Website/submit_user_form.py" />
         <option value="$PROJECT_DIR$/_static/css/style.css" />
+        <option value="$PROJECT_DIR$/_templates/snippets/snip_services.html" />
+        <option value="$PROJECT_DIR$/_templates/snippets/snip_main_footer.html" />
+        <option value="$PROJECT_DIR$/_templates/snippets/snip_main_slider.html" />
+        <option value="$PROJECT_DIR$/AngoApp/urls.py" />
+        <option value="$PROJECT_DIR$/_templates/snippets/snip_process.html" />
+        <option value="$PROJECT_DIR$/_templates/snippets/snip_userform.html" />
+        <option value="$PROJECT_DIR$/_templates/Website/about.html" />
+        <option value="$PROJECT_DIR$/Website/admin.py" />
+        <option value="$PROJECT_DIR$/Website/forms.py" />
+        <option value="$PROJECT_DIR$/Website/models.py" />
+        <option value="$PROJECT_DIR$/AngoApp/settings.py" />
+        <option value="$PROJECT_DIR$/Website/views.py" />
       </list>
     </option>
   </component>
@@ -204,8 +226,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="374" />
     <option name="y" value="23" />
-    <option name="width" value="726" />
+    <option name="width" value="906" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectView">
@@ -223,6 +246,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,19 +263,7 @@
             <path>
               <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
-              <item name="_static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
               <item name="_templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
-              <item name="_templates" type="462c0819:PsiDirectoryNode" />
-              <item name="masters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
@@ -264,12 +277,26 @@
               <item name="_templates" type="462c0819:PsiDirectoryNode" />
               <item name="Website" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,6 +326,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Website" />
       <recent name="$PROJECT_DIR$/_templates/snippets" />
     </key>
   </component>
@@ -366,14 +394,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19394773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21595599" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17124394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18156809" sideWeight="0.16639742" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21320495" sideWeight="0.677706" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.49676898" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18156809" sideWeight="0.8336026" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10177706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -398,25 +427,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_static/css/turquoise.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="1124" column="34" lean-forward="true" selection-start-line="1123" selection-start-column="11" selection-end-line="1124" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_static/css/simple-line-icons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1749">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_static/css/pink.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
@@ -695,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_templates/masters/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -745,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ViewsLibraries.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -759,21 +760,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngoApp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding>
-            <element signature="e#135#176#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_templates/Website/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,14 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_main_slider.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="98" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="98" />
         </state>
       </provider>
     </entry>
@@ -803,7 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="151" column="6" lean-forward="false" selection-start-line="66" selection-start-column="19" selection-end-line="151" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,77 +802,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/Website/about.html">
+    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_partners">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_main_nav.html">
+    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_partners.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="86" lean-forward="false" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
+        <state relative-caret-position="108">
+          <caret line="22" column="108" lean-forward="false" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/views.py">
+    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_testimonials.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2820">
-          <caret line="191" column="19" lean-forward="false" selection-start-line="191" selection-start-column="13" selection-end-line="191" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="6" column="90" lean-forward="false" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/models.py">
+    <entry file="file://$PROJECT_DIR$/Website/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="130" column="43" lean-forward="false" selection-start-line="130" selection-start-column="43" selection-end-line="130" selection-end-column="43" />
-          <folding>
-            <element signature="e#112#1132#0" expanded="false" />
-            <element signature="e#1170#2400#0" expanded="false" />
-            <element signature="e#2437#3448#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngoApp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_templates/masters/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="15">
           <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_partners">
+    <entry file="file://$PROJECT_DIR$/_static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="196">
+          <caret line="1124" column="0" lean-forward="true" selection-start-line="1124" selection-start-column="0" selection-end-line="1124" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_main_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_main_footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        <state relative-caret-position="315">
+          <caret line="21" column="76" lean-forward="false" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="58" column="18" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -901,57 +872,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_userform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_partners.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="22" column="108" lean-forward="false" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_testimonials.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="90" lean-forward="false" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
-          <folding>
-            <element signature="e#1907#1914#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_process.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+        <state relative-caret-position="314">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_services.html">
+    <entry file="file://$PROJECT_DIR$/Website/submit_user_form.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        <state relative-caret-position="105">
+          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/Website/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/AngoApp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="1118" column="0" lean-forward="false" selection-start-line="1118" selection-start-column="0" selection-end-line="1118" selection-end-column="0" />
+        <state relative-caret-position="617">
+          <caret line="63" column="60" lean-forward="false" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_userform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/snippets/snip_main_slider.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+          <folding>
+            <element signature="e#56#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2235">
+          <caret line="149" column="42" lean-forward="false" selection-start-line="149" selection-start-column="42" selection-end-line="149" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngoApp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="177" column="91" lean-forward="false" selection-start-line="177" selection-start-column="91" selection-end-line="177" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

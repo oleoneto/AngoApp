@@ -2,6 +2,10 @@ from ViewsLibraries import *
 from Choices import *
 from .search import SearchViewController
 from .forms import *
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse, HttpResponseRedirect
+from django.core.mail import EmailMessage
+
 
 # Create your views here.
 
@@ -148,7 +152,40 @@ def process(request):
     return render(request, 'Website/process.html')
 
 def services(request):
-    form=ClientForm
+    if request.POST:
+        form = MessageForm(request.POST)
+        if form.is_valid():
+            first_name_from_html = request.POST['first_name']
+            last_name_from_html = request.POST['last_name']
+            email_from_html = request.POST['email']
+            cellphone_from_html = request.POST['cellphone']
+            content_from_html = request.POST['content']
+            #message_from_html = request.POST['message']
+            tipo_de_servico_from_html = request.POST['tipo_de_servico']
+
+
+            message_object = Message(first_name=first_name_from_html, last_name=last_name_from_html
+                                     ,email=email_from_html,cellphone=cellphone_from_html,
+                                     message=content_from_html,tipo_de_servico=tipo_de_servico_from_html)
+            message_object.save()
+
+            # #send email to the user
+            subject = 'Contacto com a AngoApp'
+            message = 'Obrigado por entrar em contacto com a AngoApp.'
+
+            from_email = 'angoapp2016@gmail.com'
+            message_from_client='tipo de servico: '+tipo_de_servico_from_html+'\nMENSAGEM: '+ content_from_html +'\n\n nome: '+first_name_from_html+' '+last_name_from_html+ '\n numero de telefone: ' + cellphone_from_html + '\nemail: ' + email_from_html
+            try:
+                #send notification to the client and to angoapp email
+                email_to_client = EmailMessage(subject, message, to=[email_from_html])
+                email_to_angoapp = EmailMessage('PEDIDO PELO WEBSITE',message_from_client, to=[from_email])
+                email_to_client.send()
+                email_to_angoapp.send()
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect("/")
+    else:
+        form = MessageForm()
     return render(request, 'Website/services.html', {
         'form': form,
     })
@@ -191,7 +228,6 @@ def article_single(request, keyword):
 
 #----------- SEARCH ----------------
 # Check Website/search.py
-
 
 
 #--------- REDIRECTS --------------
