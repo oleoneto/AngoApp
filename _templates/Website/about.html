@@ -3,66 +3,69 @@
 
 {% block content %}
 <div id="about-us" data-section="about">
-		<div class="container">
-			<div class="row" id="about-us">
-				<div class="col-md-12 section-heading">
-					<h2 class="to-animate">Sobre Nós</h2>
-					<div class="row">
-                        <div class="col-md-7  to-a1nimate">
-                            <h3>
-
-                                A AngoApp é uma empresa que se foca em reforçar o sector tecnológico em Angola, África.
-                                A organizaçāo tem como funções centrais a criação de aplicativos móveis para a educação e
-                                entretenimento da população angolana, bem como a automação de serviços das empresas nacionais.
-                                <br><br>
-                                A AngoApp foi criada por dois estudantes de engenharia informática que notaram uma escassez de produtos e serviços no sector tecnológico angolano.
-                                Pelo interesse desde cedo demonstrado no sector de aplicativos moveis e web, resolveram assim criar uma empresa que serviria para reduzir esta escassez.
-                                Apesar de ser uma empresa centrada no mercado angolano, a AngoApp encontra-se neste momento localizada em Indianapolis, Indiana nos Estados Unidos da América.
-
-                            </h3>
-                        </div>
-					</div>
+	<div class="container">
+		<div class="row" id="about-us">
+			<div class="col-md-12 section-heading">
+				<h2 class="to-animate">Sobre Nós</h2>
+				<div class="row">
+	                <div class="col-md-7 to-a1nimate">
+	                    <h3>
+	                        A AngoApp é uma empresa que se foca em reforçar o sector tecnológico em Angola, África. A organizaçāo tem como funções centrais a criação de aplicativos móveis para a educação e entretenimento da população angolana, bem como a automação de serviços das empresas nacionais.
+	                        <br><br>
+	                        A AngoApp foi criada por dois estudantes de engenharia informática que notaram uma escassez de produtos e serviços no sector tecnológico angolano.
+	                        Pelo interesse desde cedo demonstrado no sector de aplicativos moveis e web, resolveram assim criar uma empresa que serviria para reduzir esta escassez.
+	                        Apesar de ser uma empresa centrada no mercado angolano, a AngoApp encontra-se neste momento localizada em Indianapolis, Indiana nos Estados Unidos da América.
+	                    </h3>
+	                </div>
 				</div>
 			</div>
-        </div>
-        <img id="pinned-right" class="" src="{% static 'img/pinned-right.png' %}" alt="">
+		</div>
+    </div>
 
-
-
+	<img id="pinned-right" class="" src="{% static 'img/pinned-right.png' %}" alt="">
 
 	{% include "snippets/snip_partners.html" %}
 
+    <div class="bg-white top-100 bottom-100" id="about" aria-labelledby="about">
+	<div class="container" id="team">
 
-        <div class="bg-white top-100 bottom-100" id="about" aria-labelledby="about">
-        <div class="container" id="team">
-        <div class="col-md-12 section-heading text-center to-animate">
+		<div class="col-md-12 section-heading text-center to-animate">
             <h2>Quem Somos</h2>
         </div>
+
         <div class="row">
         {% for person in people %}
-
             <div class="col-md-4">
-            <div class="person">
-                <img src="{{person.photo.url}}" class="img-responsive team-image" alt="{{ person.name }}">
-                <div class="person-social-link">
-                    <a href="{{ person.linkedin }}" target="_blank"><i class="icon-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="position">{{person.role}}</div>
-            <h2 class="name">{{person.name}}</h2>
-            <p>{{ person.bio | slice:"210" }}</p>
-            <ul class="social social-circle display-none">
-                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                    <li><a href="#"><i class="icon-github"></i></a></li>
-            </ul>
+	            <div class="person">
+	                <img src="{{person.photo.url}}" class="img-responsive team-image" alt="{{ person.name }}">
+	                <div class="person-social-link">
+	                    <a href="{{ person.linkedin }}" target="_blank">
+							<i class="icon-linkedin"></i>
+						</a>
+	                </div>
+	            </div>
+
+				<div class="position">{{person.role}}</div>
+            	<h2 class="name">{{person.name}}</h2>
+
+				{% comment %}
+					LEO: The bio is being sliced, but we may consider changing the TextField to be exactly 210 characters instead.
+				{% endcomment %}
+            	<p>{{ person.bio | slice:"210" }}</p>
+
+				{% comment %}
+					LEO: The href attribute for linkedin and github should have actual links to the profiles.
+				{% endcomment %}
+	            <ul class="social social-circle display-none">
+	                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+	                <li><a href="#"><i class="icon-github"></i></a></li>
+	            </ul>
             </div>
         {% endfor %}
         </div>
-        </div>
-	
+    </div>
+
 </div>
 
 </div>
 {% endblock %}
-
-
