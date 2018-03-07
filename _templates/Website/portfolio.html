@@ -1,19 +1,13 @@
-
-
-
 {% extends 'masters/master.html' %}
 {% load static from staticfiles %}
-
-
 
 {% block content %}
 {% if page == 'portfolio_home' %}
 <!-- Portfolio Section -->
-{#    #}
 <div id="features" class="bg-gray">
     <div class="container">
         <div class="section-heading text-left center">
-            <h2 class="text-center" >Portfólio</h2>
+            <h2 class="text-center">Portfólio</h2>
         </div>
 
         <div id="lightbox" class="row">
@@ -23,7 +17,7 @@
                     <div class="hover-bg" >
                         <a href="{% url 'portfolio-detail' project.slug %}">
                         {% if project.artwork %}
-                        <img src="{{project.artwork.url}}" class="img-responsive" alt="Image of {{ project.title }}">
+                            <img src="{{project.artwork.url}}" class="img-responsive" alt="Image of {{ project.title }}">
                         {% endif %}
                         </a>
                         <div class="portfolio-info">
@@ -32,7 +26,6 @@
                             </a>
                             <p>{{ project.publishedDate }}</p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -42,14 +35,18 @@
 </div>
 {% endif %}
 
-
 {% if page == 'portfolio_detail' %}
+    {% comment %}
+        LEO: I'd add a class to the container and make that class resposible for
+        the padding instead of using the <br> tag.
+    {% endcomment %}
     <br>
     <br>
     <br>
     <br>
+
     <div class="container-fluid">
-        <div style="background-image: url('{{artwork}}');"></div>
+        <div style="background-image: url('{{artwork}}')"></div>
     </div>
 
     <div class="container">
