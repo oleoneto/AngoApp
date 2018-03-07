@@ -146,6 +146,8 @@ def project_detail(request, keyword):
         'artwork': project.artwork.url,
         'description': project.description,
         'photos': photos,
+        'link': project.link,
+        'publishedDate':project.publishedDate
     })
 
 def process(request):
@@ -160,7 +162,6 @@ def services(request):
             email_from_html = request.POST['email']
             cellphone_from_html = request.POST['cellphone']
             content_from_html = request.POST['content']
-            #message_from_html = request.POST['message']
             tipo_de_servico_from_html = request.POST['tipo_de_servico']
 
 
@@ -169,7 +170,7 @@ def services(request):
                                      message=content_from_html,tipo_de_servico=tipo_de_servico_from_html)
             message_object.save()
 
-            # #send email to the user
+            #send email to the user
             subject = 'Contacto com a AngoApp'
             message = 'Obrigado por entrar em contacto com a AngoApp.'
 

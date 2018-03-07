@@ -52,16 +52,25 @@
         <div style="background-image: url('{{artwork}}');"></div>
     </div>
 
+
     <div class="container">
-    <h1>{{ title }}</h1>
-        {% if photos %}
-            <div class="row">
-            {% for i in photos %}
-                <div class="col-md-4">
-                <img class="img-responsive" src="{{ i.photo.url }}" alt="{{ title }}">
+
+        <h1 class="text-center bottom-40">{{ title }}</h1>
+            <p> {{ description }}</p>
+            <h3> Data de Publicação: {{ publishedDate }}</h3>
+            <a href="{{link }}" target="_blank"><img src="{% static "img/playstore.png" %}" width="200" height="80"> </a>
+            {% if photos %}
+                <div class="row">
+                {% for i in photos %}
+                    <div class="col-md-4 bottom-40">
+                    <img class="img-responsive" src="{{ i.photo.url }}" alt="{{ title }}">
+                    </div>
+
+                {% endfor %}
+            {% endif %}
+
                 </div>
-            {% endfor %}
-        {% endif %}
+
     </div>
 {% endif %}
 
