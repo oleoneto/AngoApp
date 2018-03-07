@@ -1,151 +1,92 @@
 {% extends 'masters/master.html' %}
-
 {% load static from staticfiles %}
-
-{% block content-9 %}
-    	<div id="press" data-section="press">
-		<div class="container">
-            <div class="">
-
-
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link show active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Análise</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Protótipo</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Design</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Desenvolvimento</a>
-                <a class="nav-link" id="v-pills-p5-tab" data-toggle="pill" href="#v-pills-p5" role="tab" aria-controls="v-pills-p5" aria-selected="false">P5</a>
-            </div>
-
-
-
-            <div class="tab-content" id="v-pills-tabContent">
-
-              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-home">
-                <h3 class="h2 press-title">Análise do aplicativo em causa <span class="border"></span></h3>
-                <p>Nesta fase análisamos o aplicativo de uma forma geral. Fazemos um estudo de mercado
-                para saber as melhores características para um aplicativo inovador. Em alguns casos, inquéritos poderão ser
-                conduzidos para se saber com mais precisão o que é que o público gostaria de consumir.
-                </p>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-profile">
-                  <h3 class="h2 press-title">Protótipo do Aplicativo <span class="border"></span></h3>
-                  <p>Nesta fase determinamos a experiência de usuário que queremos construir. Construímos um
-                  mapa de telas do aplicativo e sistematizamos o funcionamento para melhor fluidez.
-                  </p>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-messages">
-                  <h3 class="h2 press-title">Design do Aplicativo <span class="border"></span></h3>
-                  <p>Nessa fase os nossos designers estudam o público alvo e a cultura da empresa
-                  (para o caso de empresas) para desenhar um aplicativo que seja cativante para os usuários.
-                  Estamos num mundo muito visual, então esta é uma fase em que precisa-se de trabalhar com alguma cautela.
-                  </p>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-settings">
-                <h3 class="h2 press-title">Desenvolvimento do Aplicativo <span class="border"></span></h3>
-                <p>Os aplicativos começam a ser construídos para funcionamento efectivo nesta fase.
-                Os programadores criam e dividem tarefas para a criação de algoritmos que tornem
-                o aplicativo responsivo de usar e preparado para qualquer tipo de adição ou actualização.
-                </p>
-              </div>
-
-                <div class="tab-pane fade" id="v-pills-p5" role="tabpanel" aria-labelledby="v-p5">
-                    <h3 class="h2 press-title">Desenvolvimento do Aplicativo <span class="border"></span></h3>
-							<p>Os aplicativos começam a ser construídos para funcionamento efectivo nesta fase.
-                                Os programadores criam e dividem tarefas para a criação de algoritmos que tornem
-                                o aplicativo responsivo de usar e preparado para qualquer tipo de adição ou actualização.</p>
-                </div>
-            </div>
-            </div>
-		</div>
-	</div>
-{% endblock %}
-
 
 {% block content %}
 <div id="press" data-section="press">
 <div class="container">
 
     <ul class="nav nav-tabs">
-        <li role="presentation" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" class="active" aria-selected="true"><a href="#v-pills-home">Análise do aplicativo em causa</a></li>
-        <li role="presentation" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" aria-selected="false"><a href="#v-pills-profile">Protótipo do Aplicativo</a></li>
-        <li role="presentation" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" aria-selected="false"><a href="#v-pills-messages">Design do Aplicativo</a></li>
-        <li role="presentation" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" aria-selected="false"><a href="#v-pills-settings">Desenvolvimento do Aplicativo</a></li>
-        <li role="presentation" id="v-pills-p5-tab" data-toggle="pill" href="#v-pills-p5" aria-selected="false"><a href="#v-pills-p5">Testes do Aplicativo</a></li>
+        <li role="presentation" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" class="active" aria-selected="true">
+            <a href="#v-pills-home">Análise do aplicativo em causa</a>
+        </li>
+        <li role="presentation" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" aria-selected="false">
+            <a href="#v-pills-profile">Protótipo do Aplicativo</a>
+        </li>
+        <li role="presentation" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" aria-selected="false">
+            <a href="#v-pills-messages">Design do Aplicativo</a>
+        </li>
+        <li role="presentation" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" aria-selected="false">
+            <a href="#v-pills-settings">Desenvolvimento do Aplicativo</a>
+        </li>
+        <li role="presentation" id="v-pills-p5-tab" data-toggle="pill" href="#v-pills-p5" aria-selected="false">
+            <a href="#v-pills-p5">Testes do Aplicativo</a>
+        </li>
     </ul>
 
-
     <div class="tab-content " id="v-pills-tabContent">
-
         <div class="tab-pane fade show active " id="v-pills-home" role="tabpanel" aria-labelledby="v-home">
-
                   <div class="item col-md-6">
-
-                      <h3 class="h2 press-title">Análise do aplicativo em causa <span class="border"></span></h3>
-                      <p>Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
-							Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
+                      <h3 class="h2 press-title">Análise do aplicativo em causa
+                          <span class="border"></span>
+                      </h3>
+                      <p>
+                        Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
+						Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
                       </p>
                   </div>
-            <img class="item col-md-6 " src='{% static "img/IMD2.png" %}' alt="Smiley face" >
+
+                  {% comment %}
+                      LEO: I'd consider changing the alt tag to something more
+                      relevant to the image being displayed. This also applies to other img elements.
+                  {% endcomment %}
+            <img class="item col-md-6 " src='{% static "img/IMD2.png" %}' alt="Smiley face">
         </div>
 
         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-profile">
+            <img class="item col-md-6 " src='{% static "img/IMD2.png" %}' alt="Smiley face">
+                  <div class="item col-md-6">
+                      <h3 class="h2 press-title">Protótipo do Aplicativo
+                          <span class="border"></span>
+                      </h3>
+                      <p>Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
+					  Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
+                      </p>
+                  </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-messages">
+          <div class="item col-md-6">
+              <h3 class="h2 press-title">Design do Aplicativo
+                  <span class="border"></span>
+              </h3>
+              <p>Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
+			  Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
+              </p>
+          </div>
+         <img class="item col-md-6 " src='{% static "img/IMD2.png" %}' alt="Smiley face">
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-settings">
+          <img class="item col-md-6 " src='{% static "img/IMD2.png" %}' alt="Smiley face">
+          <div class="item col-md-6">
+              <h3 class="h2 press-title">Desenvolvimento do Aplicativo <span class="border"></span></h3>
+              <p>Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
+					Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
+              </p>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-p5" role="tabpanel" aria-labelledby="v-p5">
+                  <div class="item col-md-6">
+                      <h3 class="h2 press-title">Testes do Aplicativo
+                          <span class="border"></span>
+                      </h3>
+                      <p>Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
+					  Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
+                      </p>
+                  </div>
             <img class="item col-md-6 " src='{% static "img/IMD2.png" %}' alt="Smiley face" >
-
-                  <div class="item col-md-6">
-
-                      <h3 class="h2 press-title">Protótipo do Aplicativo <span class="border"></span></h3>
-                      <p>Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
-							Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
-                      </p>
-                  </div>
-
         </div>
-
-        <div class="tab-pane fade " id="v-pills-messages" role="tabpanel" aria-labelledby="v-messages">
-
-                  <div class="item col-md-6">
-
-                      <h3 class="h2 press-title">Design do Aplicativo  <span class="border"></span></h3>
-                      <p>Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
-							Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
-                      </p>
-                  </div>
-                        <img class="item col-md-6 " src='{% static "img/IMD2.png" %}' alt="Smiley face" >
-
-
-        </div>
-
-        <div class="tab-pane fade  " id="v-pills-settings" role="tabpanel" aria-labelledby="v-settings">
-
-                        <img class="item col-md-6 " src='{% static "img/IMD2.png" %}' alt="Smiley face" >
-
-                  <div class="item col-md-6">
-
-                      <h3 class="h2 press-title">Desenvolvimento do Aplicativo <span class="border"></span></h3>
-                      <p>Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
-							Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
-                      </p>
-                  </div>
-
-        </div>
-
-        <div class="tab-pane fade " id="v-pills-p5" role="tabpanel" aria-labelledby="v-p5">
-
-                  <div class="item col-md-6">
-
-                      <h3 class="h2 press-title">Testes do Aplicativo <span class="border"></span></h3>
-                      <p>Nesta fase analisamos o aplicativo de uma forma geral. É feito um estudo de mercado para sabermos quais as melhores características de um aplicativo inovador.
-							Em alguns casos, inquéritos poderão ser conduzidos para se saber com mais precisão o que é que o público alvo gostaria de consumir.
-                      </p>
-                  </div>
-
-            <img class="item col-md-6 " src='{% static "img/IMD2.png" %}' alt="Smiley face" >
-
-        </div>
-
     </div>
 
 </div>
