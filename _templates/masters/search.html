@@ -2,40 +2,38 @@
 
 {% block content %}
 <div class="container top-100">
-<div class="row">
+    <div class="row">
 
-    {% if articles %}
-        <div class="col-md-4">
-        {% for article in articles %}
-            <a href="{% url 'blog-single' article.slug %}">
-            <h4>{{ article }}</h4>
-            </a>
-        {% endfor %}
-        </div>
-    {% endif %}
+        {% if articles %}
+            <div class="col-md-4">
+            {% for article in articles %}
+                <a href="{% url 'blog-single' article.slug %}">
+                <h4>{{ article }}</h4>
+                </a>
+            {% endfor %}
+            </div>
+        {% endif %}
 
+        {% if people %}
+            <div class="col-md-4">
+            {% for person in people %}
+                <a href="/about/#about">
+                <h4>{{ person }}</h4>
+                </a>
+            {% endfor %}
+            </div>
+        {% endif %}
 
-    {% if people %}
-        <div class="col-md-4">
-        {% for person in people %}
-            <a href="/about/#about">
-            <h4>{{ person }}</h4>
-            </a>
-        {% endfor %}
-        </div>
-    {% endif %}
+        {% if projects %}
+            <div class="col-md-4">
+            {% for project in projects %}
+                <a href="{% url 'portfolio-detail' project.slug %}">
+                <h4>{{ project }}</h4>
+                </a>
+            {% endfor %}
+            </div>
+        {% endif %}
 
-
-    {% if projects %}
-        <div class="col-md-4">
-        {% for project in projects %}
-            <a href="{% url 'portfolio-detail' project.slug %}">
-            <h4>{{ project }}</h4>
-            </a>
-        {% endfor %}
-        </div>
-    {% endif %}
-
-</div>
+    </div>
 </div>
 {% endblock %}
