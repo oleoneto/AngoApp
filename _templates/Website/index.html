@@ -2,7 +2,11 @@
 {% load static from staticfiles %}
 
 {% block content %}
-{% include 'snippets/snip_main_slider.html' %}
-{% include 'snippets/snip_services.html' %}
-{% include 'snippets/snip_testimonials.html' %}
+
+    {% include 'snippets/snip_main_slider.html' %}
+
+    {% include 'snippets/snip_services.html' %}
+
+    {% include 'snippets/snip_testimonials.html' %}
+    
 {% endblock %}
