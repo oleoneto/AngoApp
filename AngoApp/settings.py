@@ -1,7 +1,7 @@
 """
 Django settings for AngoApp project.
 Using Django 1.11.4.
-Last update by Leo N. on November 19, 2017
+Last update by Leo N. on March 8, 2018
 
 """
 
@@ -21,9 +21,9 @@ SECRET_KEY = 's6uem!m&mtiht2+oi43g1gu3&_n759+qha9&ktwofo$&pl@6xa'
 DEBUG = False
 
 if DEBUG:
-    ALLOWED_HOSTS = ['127.0.0.1', 'localhost' ,'.angoapp.com', 'io', ]
+    ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'io']
 else:
-    ALLOWED_HOSTS = ['.angoapp.com', '174.138.62.51']
+    ALLOWED_HOSTS = ['.angoapp.com']
 
 
 # Application definition
