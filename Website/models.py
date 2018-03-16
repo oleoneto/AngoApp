@@ -20,6 +20,7 @@ class Client(models.Model):
 # Create your models here.
 class Person(models.Model):
     name = models.CharField(max_length=45, blank=False)
+    email = models.EmailField(blank=False,default="someone@angoapp.com")
     photo = models.ImageField(upload_to="uploads/profiles/", max_length=45, blank=False)
     role = models.CharField(max_length=45, blank=True)
     administrator = models.BooleanField(default=False)
