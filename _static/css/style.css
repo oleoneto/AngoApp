@@ -1118,8 +1118,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .our_service_image{
-  width: 420px;
-  height: 220px;
+  /*width: 420px;
+  height: 400px;*/
   border-radius: 10px;
 }
 
@@ -1272,6 +1272,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 40px;
 
 }
+
 
 /*.navbar-inverse .navbar-nav>li>a {*/
     /*color: #ffffff;*/

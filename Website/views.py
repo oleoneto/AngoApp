@@ -172,7 +172,7 @@ def services(request):
 
             #send email to the user
             subject = 'Contacto com a AngoApp'
-            message = 'Obrigado por entrar em contacto com a AngoApp.'
+            message = 'A sua mensagem foi recebida com sucesso. A Angoapp irá contactá-lo brevemente.Cumprimentos.'
 
             from_email = 'angoapp2016@gmail.com'
             message_from_client='tipo de servico: '+tipo_de_servico_from_html+'\nMENSAGEM: '+ content_from_html +'\n\n nome: '+first_name_from_html+' '+last_name_from_html+ '\n numero de telefone: ' + cellphone_from_html + '\nemail: ' + email_from_html
@@ -184,7 +184,7 @@ def services(request):
                 email_to_angoapp.send()
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-            return redirect("/")
+            return redirect("/about/")
     else:
         form = MessageForm()
     return render(request, 'Website/services.html', {
