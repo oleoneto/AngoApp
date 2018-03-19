@@ -25,15 +25,14 @@
 				</div>
 			</div>
         </div>
-        <img id="pinned-right" class=""  src="{% static 'img/sobre_nos.jpg' %}" alt="">
+        <img id="pinned-right" class=""  src="{% static 'img/sobre_nos.png' %}" alt="">
 
 
 
 
-	{% include "snippets/snip_partners.html" %}
 
 
-        <div class="bg-white top-100 bottom-100" id="about" aria-labelledby="about">
+    <div class="bg-gray top-100 bottom-100" id="about" aria-labelledby="about">
         <div class="container" id="team">
         <div class="col-md-12 section-heading text-center to-animate">
             <h2>Quem Somos</h2>
@@ -61,8 +60,10 @@
         {% endfor %}
         </div>
         </div>
-	
-</div>
+    </div>
+
+	{% include "snippets/snip_partners.html" %}
+
 
 </div>
 {% endblock %}
