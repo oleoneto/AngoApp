@@ -28,7 +28,7 @@ else:
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'angoapp2016@gmail.com'
-EMAIL_HOST_PASSWORD = 'ANGOapp2017'
+EMAIL_HOST_PASSWORD = 'ANGOLAapplication2018'
 EMAIL_PORT = 587
 
 
